@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import List from './List';
 const App = () => {
 
   const [inputList, setInputList] = useState("");
@@ -9,6 +9,13 @@ const App = () => {
   const inputEvent = (event) => {
     setInputList(event.target.value);
   };
+  const deleteItems = (id) => {
+    setItems((oldItems) => {
+      return oldItems.filter((arrEle, index) => {
+        return index !== id;
+      })
+    })
+  }
 
   const addItems = () => {
     setItems((oldItems) => {
@@ -28,17 +35,21 @@ const App = () => {
               className="input-field"
               placeholder="Enter your note"
               onChange={inputEvent}
-            value={inputList}
+              value={inputList}
             />
             <button className="add-button" onClick={addItems} > + </button>
-              </div>
-            <ol className="todo-list"> 
-              {items.map((itemval) => {
-                return <li>{itemval}</li>
-              })}
-            </ol>
           </div>
+          <ul className="todo-list">
+            {items.map((itemval, index) => {
+              return <List text={itemval}
+                key={index}
+                id={index}
+                onSelect={deleteItems}
+              />
+            })}
+          </ul>
         </div>
+      </div>
     </>
   )
 };

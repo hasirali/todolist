@@ -69,6 +69,7 @@
 
 /* Styling for the Todo List */
 .todo-list-card {
+  
   background-color: #9EB384; /* Olive green background color for the card */
   border-radius: 20px;
   padding: 30px;
@@ -90,55 +91,37 @@
 }
 
 .todo-list {
+  list-style: none;
   margin-top: 10px;
   padding-left: 20px;
   text-align: left;
   font-size: 18px;
   color: #e1c0c0;
   max-height: 300px; /* Adjust the max-height as needed */
-  overflow-y: auto;
 }
 
-.todo-list li {
-  margin-bottom: 8px;
+.cross-button:hover {
+  background-color: #dc1515;
 }
 
-
-
-
-/* ... Your existing styles ... */
-
-/* Styling for the cross button */
+.cross-button li {
+  margin: 0px; /* Reset margin on the li element */
+  padding-left: 10px; /* Add some left padding to the li */
+  list-style: none; /* Remove the default bullet point */
+}
 .cross-button {
+  width: 20px;
+  height: 20px;
   background-color: #f7f6f6;
-  color: white;
+  color: #f8f0f0; /* Use red for the cross */
   border: none;
   border-radius: 50%;
-  padding: 4px;
-  margin-left: 10px;
+  padding: 10px;
+  margin: 20px;
   cursor: pointer;
 }
 
 .cross-button:hover {
-  background-color: #ffffff;
-}
-
-/* Styling for the completed task */
-.completed {
-  text-decoration: line-through;
-  color: #999;
-}
-
-.complete-button {
-  background-color: #70a1ff;
+  background-color: #dc1515;
   color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 4px 8px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.complete-button:hover {
-  background-color: #3366cc;
 }
