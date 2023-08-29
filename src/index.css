@@ -1,0 +1,144 @@
+/* App Container */
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
+}
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FAF1E4; /* Light cream background color for the whole page */
+}
+
+/* Card Styling */
+.card {
+  background-color: #435334; /* Dark green background color for the card */
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Full width on small screens */
+  max-width: 400px; /* Maximum width for larger screens */
+  text-align: center;
+  height: 500px; /* Increased card height */
+  margin: 20px; /* Added margin all around */
+}
+
+.card-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #FAF1E4; /* Light cream color for heading text */
+  background-color: #9EB384; /* Olive green background for heading */
+  padding: 10px; /* Added padding for heading background */
+  border-radius: 12px; /* Rounded corners for heading background */
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #9EB384; /* Olive green border */
+  border-radius: 20px;
+  margin-right: 20px;
+  width: 70%;
+  background-color: #faf1e4; /* Light cream background */
+}
+
+.add-button {
+  background-color: #faf1e4; /* Dark green color */
+  color: #f0b375; /* Light cream color */
+  border: none;
+  border-radius: 48%;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #9EB384; /* Olive green color on hover */
+}
+
+/* Styling for the Todo List */
+.todo-list-card {
+  background-color: #9EB384; /* Olive green background color for the card */
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Full width on small screens */
+  max-width: 400px; /* Maximum width for larger screens */
+  text-align: center;
+  height: 500px; /* Increased card height */
+  margin: 20px; /* Added margin all around */
+}
+
+.todo-list-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #FAF1E4; /* Light cream color for heading text */
+  background-color: #435334; /* Dark green background for heading */
+  padding: 10px; /* Added padding for heading background */
+  border-radius: 12px; /* Rounded corners for heading background */
+}
+
+.todo-list {
+  margin-top: 10px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  max-height: 300px; /* Adjust the max-height as needed */
+  overflow-y: auto;
+}
+
+.todo-list li {
+  margin-bottom: 8px;
+}
+
+
+
+
+/* ... Your existing styles ... */
+
+/* Styling for the cross button */
+.cross-button {
+  background-color: #f7f6f6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cross-button:hover {
+  background-color: #ffffff;
+}
+
+/* Styling for the completed task */
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.complete-button {
+  background-color: #70a1ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.complete-button:hover {
+  background-color: #3366cc;
+}
