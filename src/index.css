@@ -105,8 +105,8 @@
 }
 
 .cross-button li {
-  margin: 0px; /* Reset margin on the li element */
-  padding-left: 10px; /* Add some left padding to the li */
+  margin: -10px; /* Reset margin on the li element */
+  padding-left: 34px; /* Add some left padding to the li */
   list-style: none; /* Remove the default bullet point */
 }
 .cross-button {
